@@ -18,4 +18,9 @@ cursor.execute("""
 """)
 connection.commit()
 
+cursor.execute("""
+    INSERT INTO players (pseudo, lvl, maxHp,maxMana,hp,mana,xp,atq) VALUES (?, ?, ?,?,?,?,?,?)
+""", ("Evan", 1, 100,100,100,100,100,20))
+connection.commit()
+
 connection.close()
