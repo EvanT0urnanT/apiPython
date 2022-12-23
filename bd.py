@@ -1,6 +1,5 @@
-import sqlite3
 
-connection = sqlite3.connect('Api.db')
+connection = sqlite3.connect('ma_base.db')
 cursor = connection.cursor()
 cursor.execute("""
     CREATE TABLE IF NOT EXISTS players(
