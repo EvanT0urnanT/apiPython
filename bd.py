@@ -11,6 +11,8 @@ cursor.execute("""
     )
 """)
 connection.commit()
+
+
 cursor.execute("""
     INSERT INTO users (firstname, lastname, age) VALUES (?, ?, ?)
 """, ("Lewis", "Hamilton", 37))
